@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>E-Commerce Store</h1>
+  </header>
+
+  <main class="page-content">
+    <div class="toolbar">
+      <button type="button" id="notify-button">Enable Notifications</button>
+      <button type="button" id="place-order-button">Place Order</button>
+    </div>
+
+    <section class="product-list" id="product-grid"></section>
+
+    <section class="cart-box">
+      <h2>Cart</h2>
+      <p>Total Items: <span id="summary-items">0</span></p>
+      <p>Total Price: <span id="summary-subtotal">Rs. 0</span></p>
+      <button type="button" id="empty-cart-button">Empty Cart</button>
+    </section>
+  </main>
+
+  <template id="product-card-template">
+    <article class="product-card">
+      <img class="product-image" alt="product">
+      <h3 class="product-title"></h3>
+      <p class="product-price"></p>
+      <button class="add-button" type="button">Add to Cart</button>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
